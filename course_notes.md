@@ -241,11 +241,62 @@ print(movies)
 
 # ['John Wick', 'Pets', 'Spider Man', 'Lion King']
 ```
+# Section 4: Sequences, collections of data
+
+## Store an individual piece of data (variable) string
 
 ```python
-
+name = "brad"
 ```
+## store a collection of data (variable) list
+```python
+group = ["Daniel", "Mary", "Gloria"]
+```
+## Lists
+lists can contain mixed data types, integers, strings etc.
+```python
+n = 5
+print(n)
+# 5
+```
+store multiple numbers in a list, specific order, square brackets. store the list in a variable
+```python
+listA = [5, 10, 15, 20]
+print(listA)
 
+# [5, 10, 15, 20]
+```
+access an item from the list
+zero based 
+```python
+listA = [5, 10, 15, 20]
+print(listA[2])
+# 15
+```
+change a value
+```python
+listA = [5, 10, 15, 20]
+listA[2] = 150
+
+print(listA[2])
+
+# 150
+```
+# Tuples (protect your data)
+* a sequence that can't be changed after creation
+
+```python
+child1_birth = ("Julia", "Lucile Hospital", "Stanford", "California", "United States", "07/29/2019", "16:25")
+child2_birth = ("John", "Mount Hospital", "Glamorgan", "Cardiff", "Wales", "09/29/2019", "16:25")
+
+print(child1_birth)
+# ('Julia', 'Lucile Hospital', 'Stanford', 'California', 'United States', '07/29/2019', '16:25')
+```
+```python
+print(child1_birth[0])
+# Julia
+```
+lists can be modified, tuples can't have items modified, ie. you can't change time of birth index 6.
 ```python
 
 ```
