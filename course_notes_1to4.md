@@ -297,6 +297,5 @@ print(child1_birth[0])
 # Julia
 ```
 lists can be modified, tuples can't have items modified, ie. you can't change time of birth index 6.
-```python
 
-```
+
