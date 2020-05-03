@@ -1,13 +1,6 @@
-
-vowels = ['a', 'e', 'i', 'o', 'u']
-i = 0
-while i < len(vowels):
-    print(vowels[i])
-    i += 1
-
-
-# a
-# e
-# i
-# o
-# u
+def factorial(n):
+    # return factorial of positive integer n.
+    if n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)

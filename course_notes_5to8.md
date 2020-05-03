@@ -243,19 +243,19 @@ while i < len(vowels):
 # u
 
 ```
-```python
+# Recursion: defining something in terms of itself to achieve your objective
+## Recursive function: calls itself in its body
 
+```python
+def factorial(n):
+    # return factorial of positive integer n.
+    if n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
 
 ```
-```python
-
-
-```
-```python
-
-
-```
-```python
-
-
-```
+### Recursive functions
+* base case
+* recursive case
+* good for palindrome and fibonacci sequence
