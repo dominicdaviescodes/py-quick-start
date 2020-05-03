@@ -137,33 +137,110 @@ if x < 10:
 # The number is less than 10.
 
 ```
+## Iteration: repeatedly performing a set of instructions
+
+* for loop:  structure that helps you achieve iteration
+* specify a range of numbers using range()
+  * range() needs range(start,stop,step)
+  * defaults  range(0, must provide,1)
+```python
+word = "serendipitous"
+# tell the computer what vowels are
+vowels = ['a', 'e', 'i', 'o', 'u']
+
+# keep track of no. of vowels you find in a word
+vowelCount = 0
+# iteration: go through every character in a word 
+# every time a vowel is encountered must increment by 1
+
+
+for character in word:
+    if character in vowels:
+        vowelCount +=1
+print(vowelCount)   # 6
+
+```
+and without comments
 
 ```python
+word = "serendipitous"
+vowels = ['a', 'e', 'i', 'o', 'u']
+
+vowelCount = 0
+
+for character in word:
+    if character in vowels:
+        vowelCount +=1
+print(vowelCount)   # 6
+
+```
+```python
+# print out each number 0-3
+
+for i in range(4):
+    print(i)
+
+"""
+0
+1
+2
+3
+
+"""
+# i is the loop variable
+# in 1st repitition i has value of 0 so 0 gets printed out and so on
 
 
 ```
 ```python
+# print all odd numbers between 1 - 7
+
+for i in range(1,8,2):
+    print(i)
+
+# use 2 because want to print every other number
+# prints
+1
+3
+5
+7
 
 
 ```
-```python
+can iterate over a sequence
 
+```python
+vowels = ['a', 'e', 'i', 'o', 'u']
+for v in vowels:
+    print(v)
 
 ```
+## while loop
+* use len()
+  * takes in sequence as input
+  * returns the length of the sequence as output
+  * length of the sequence determines the number of repititions
 ```python
 
-
+vowels = ['a', 'e', 'i', 'o', 'u']
+length = len(vowels)
+print(length)   # 5
 ```
 ```python
-
-
-```
-```python
-
-
-```
-```python
-
+vowels = ['a', 'e', 'i', 'o', 'u']
+# initialize the variable ( give it a value )
+i = 0
+# condition
+while i < len(vowels):
+    # body
+    print(vowels[i])
+    i += 1
+# prints
+# a
+# e
+# i
+# o
+# u
 
 ```
 ```python
